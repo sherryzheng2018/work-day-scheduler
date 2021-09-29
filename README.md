@@ -15,4 +15,4 @@
 
 
 ### App demo  https://sherryzheng2018.github.io/work-day-scheduler/
-![App demontration:](Develop/daily-planner-app.png)
+![App demontration:](daily-planner-app.png)
