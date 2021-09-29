@@ -14,5 +14,5 @@
 * The saved event is persist when you refresh the page, but you can click "Reset" button if you want to clear all the information in the blocks.
 
 
-### App demo
+### App demo  https://sherryzheng2018.github.io/work-day-scheduler/
 ![App demontration:](Develop/daily-planner-app.png)
