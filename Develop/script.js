@@ -1,8 +1,11 @@
 $(document).ready(function () {
-var reformatDate = moment().format("dddd, MMMM Do YYYY, h:mm:ss a");
+var reformatDate = moment().format("dddd, MMMM Do YYYY, H:mm a");
 $("#currentDay").text(reformatDate);
 
 var currentHour = (new Date()).getHours(); 
+
+// for testing purpose:
+// currentHour = 11; 
 
 // console.log(currentHour);
 // read text content from local storage
@@ -38,5 +41,16 @@ function saveEvent() {
     calanderEventData[hour] = textInput.val();
     localStorage.setItem("calendarEventLocal", JSON.stringify(calanderEventData));
 }
+
+
+function resetCalender(){
+    localStorage.clear();
+    $('.container textarea').each(function(){
+        $(this).val('');
+    }) 
+};
+
+$('#reset').click(resetCalender);
+
 
 })
